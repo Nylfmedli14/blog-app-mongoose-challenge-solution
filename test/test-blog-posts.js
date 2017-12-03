@@ -27,7 +27,6 @@ function tearDownDb() {
   });
 }
 
-
 // used to put randomish documents in db
 // so we have data to work with and assert about.
 // we use the Faker library to automatically
