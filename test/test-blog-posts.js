@@ -168,7 +168,7 @@ describe('blog posts API resource', function() {
           post.author.firstName.should.equal(newPost.author.firstName);
           post.author.lastName.should.equal(newPost.author.lastName);
         });
-    }
+    });
       // case for when something required wasn't given
      // it('should not have ', function() {})
      // ask for get all to count posts before
