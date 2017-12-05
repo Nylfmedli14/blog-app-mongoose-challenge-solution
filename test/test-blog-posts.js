@@ -27,7 +27,6 @@ function tearDownDb() {
   });
 }
 
-
 // used to put randomish documents in db
 // so we have data to work with and assert about.
 // we use the Faker library to automatically
@@ -170,6 +169,12 @@ describe('blog posts API resource', function() {
           post.author.lastName.should.equal(newPost.author.lastName);
         });
     });
+      // case for when something required wasn't given
+     // it('should not have ', function() {})
+     // ask for get all to count posts before
+     // make newPost, leaving out a key
+     // expect status 400)
+     // see if the count matches before and after;
   });
 
   describe('PUT endpoint', function() {
